@@ -1,4 +1,4 @@
-# Vision Api Console
+# Large App Starter Kit
 
 ## Develop
 ```sh
