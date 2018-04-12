@@ -7,10 +7,6 @@ import {
   Router,
 } from 'react-router-dom';
 
-import {
-  BASENAME,
-} from '../shared/constants';
-
 import i18nInstance from './i18next';
 
 import AppRoute from '../AppRoute';
@@ -22,7 +18,7 @@ const Root = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <I18nextProvider i18n={i18nInstance}>
-        <Router history={history} basename={BASENAME}>
+        <Router history={history}>
           <AppRoute />
         </Router>
       </I18nextProvider>
